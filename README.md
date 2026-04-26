@@ -1,3 +1,7 @@
+> **How I use this:** I run goviralbro to manage my content operation across X and LinkedIn — focused on adtech, partnerships, and operator-grade product thinking. I forked this from [charlesdove977/goviralbro](https://github.com/charlesdove977/goviralbro) (MIT). The system is configured around my ICP (adtech operators, partnership leads, early-stage founders) and feeds directly into my publishing workflow. What's below is the original system — I've layered my own brain config and topic pillars on top.
+
+---
+
 <p align="center">
   <img src="assets/gvb-logo.svg" alt="GVB" width="320" />
 </p>
