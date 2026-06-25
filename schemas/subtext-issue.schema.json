@@ -1,0 +1,89 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Subtext Issue",
+  "description": "One published-ready Subtext read: the consensus surface line, the subtext beneath it, the product/strategy take, a gated AI take, a takeaway, and self-scores. Appended one-per-line to data/subtext/issues.jsonl.",
+  "type": "object",
+  "required": ["id", "issue_date", "source", "surface_line", "subtext", "ps_take", "takeaway", "scores", "format", "status", "created_at"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "subtext_{YYYYMMDD}_{NNN}"
+    },
+    "issue_date": {
+      "type": "string",
+      "description": "ISO date (YYYY-MM-DD) of the weekly issue"
+    },
+    "source": {
+      "type": "object",
+      "required": ["publication", "title", "url"],
+      "properties": {
+        "publication": { "type": "string", "description": "e.g. The Best One Yet (TBOY)" },
+        "video_id": { "type": "string" },
+        "title": { "type": "string", "description": "Original episode/headline" },
+        "url": { "type": "string" }
+      }
+    },
+    "surface_line": {
+      "type": "string",
+      "description": "The consensus read — the obvious take everyone repeats. Rendered struck-through."
+    },
+    "subtext": {
+      "type": "string",
+      "description": "The read underneath — why they're actually doing this and what it means."
+    },
+    "ps_take": {
+      "type": "string",
+      "description": "Product/strategy lens: 2-4 sharp, falsifiable sentences."
+    },
+    "ai_take": {
+      "type": ["string", "null"],
+      "description": "Gated AI lens: 2-3 concrete sentences, or null if the AI lens was skipped."
+    },
+    "ai_lens_skipped_reason": {
+      "type": ["string", "null"],
+      "description": "One-line reason if ai_take is null; otherwise null."
+    },
+    "takeaway": {
+      "type": "string",
+      "description": "One repeatable line."
+    },
+    "scores": {
+      "type": "object",
+      "required": ["differentiation", "could_anyone_else_write_this"],
+      "properties": {
+        "differentiation": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10,
+          "description": "1-10. 9-10 = only you could write it; <5 = kill."
+        },
+        "could_anyone_else_write_this": {
+          "type": "string",
+          "description": "One-line check. 'no, because ...' is the passing answer."
+        },
+        "forced_ai_check": {
+          "type": "string",
+          "description": "Did the take need the AI lens, or was it decoration?"
+        }
+      }
+    },
+    "format": {
+      "type": "string",
+      "enum": ["linkedin_longform", "newsletter", "x_thread", "shortform_script"],
+      "description": "Render format. Lens logic is identical across formats."
+    },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "approved", "published", "killed"],
+      "description": "Nothing reaches 'published' without the user's explicit approve."
+    },
+    "weakest_flag": {
+      "type": ["boolean", "null"],
+      "description": "True if this was flagged the weakest issue of its batch."
+    },
+    "created_at": {
+      "type": "string",
+      "description": "ISO 8601 timestamp"
+    }
+  }
+}

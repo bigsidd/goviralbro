@@ -1,0 +1,60 @@
+{
+  "source": "The Best One Yet (TBOY)",
+  "extracted_from": "Episode titles + descriptions (transcripts are PO-token-walled; the hook DNA lives in the titles regardless)",
+  "extracted_at": "2026-06-24",
+  "hard_rule": "STRUCTURE ONLY. These are abstracted skeletons — slot templates, never TBOY's wording, metaphors, or headlines. The render step fills every slot in 100% original words.",
+  "narrative_arc": [
+    "HOOK: a bold, concrete claim that front-loads the stakes (a number, a name, or a consequence)",
+    "MECHANISM: the one surprising move or rule that explains how the claim is true",
+    "TAKEAWAY: a single repeatable line the reader can carry into a conversation"
+  ],
+  "hook_patterns": [
+    {
+      "name": "speculative_stakes",
+      "skeleton": "[Company]'s [recent move] could [bold consequence]",
+      "when_to_use": "A small/cheap move implies an outsized outcome. Forces the reader to ask 'how?'",
+      "slot_notes": "Consequence must be specific and big (a title, a market, a number), never vague."
+    },
+    {
+      "name": "transformation_metaphor",
+      "skeleton": "How [Company] turned into [vivid metaphor for what it really is now]",
+      "when_to_use": "The company's stated identity diverges from its actual economic engine.",
+      "slot_notes": "Metaphor reframes the business model in one image. Must be falsifiable, not cute."
+    },
+    {
+      "name": "contrarian_why",
+      "skeleton": "Why [authority figure] [did the surprising thing]",
+      "when_to_use": "A respected operator made a move that looks wrong on the surface.",
+      "slot_notes": "The payoff is the hidden rationale, not the action itself."
+    },
+    {
+      "name": "single_rule",
+      "skeleton": "One [rule/move] beats every [crowded category]",
+      "when_to_use": "Cuts through noise/hype with a single decision heuristic.",
+      "slot_notes": "The rule must actually be load-bearing, not a platitude."
+    },
+    {
+      "name": "spend_to_goal",
+      "skeleton": "How [Company] spent $[N] to [strategic goal]",
+      "when_to_use": "A large, specific spend reveals a non-obvious priority.",
+      "slot_notes": "The number anchors; the goal reframes what the spend was really for."
+    },
+    {
+      "name": "headline_hidden_cause",
+      "skeleton": "[Event]: why [non-obvious underlying cause]",
+      "when_to_use": "The reported reason and the real reason differ.",
+      "slot_notes": "Colon split: surface event, then the subtext. This IS the Subtext shape."
+    }
+  ],
+  "segment_structure": {
+    "open": "Lead with the subtext, not the recap. Assume the reader saw the headline.",
+    "body": "1-2 lines of story context, then the load-bearing tradeoff. No padding.",
+    "close": "One takeaway line. Repeatable, forwardable, falsifiable."
+  },
+  "voice_markers": [
+    "Confident, concrete, a little irreverent",
+    "Numbers and names over adjectives",
+    "Active voice; short declaratives for the reveal",
+    "Banned: buzzword soup, 'in today's fast-paced AI-driven world' energy"
+  ]
+}
