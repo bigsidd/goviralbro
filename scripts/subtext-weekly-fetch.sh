@@ -21,4 +21,9 @@ mkdir -p logs
   /usr/bin/python3 scripts/subtext_fetch.py --count 8
   rc=$?
   echo "[$(date '+%F %T %Z')] subtext fetch done (exit $rc)"
+  if [[ $rc -eq 0 ]]; then
+    /usr/bin/python3 scripts/subtext_notify.py
+  else
+    echo "[$(date '+%F %T %Z')] skipping notify (fetch failed)"
+  fi
 } >> logs/subtext-fetch.log 2>&1
