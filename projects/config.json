@@ -3,8 +3,24 @@
   "tagline": "Everyone reads the headline. We read the subtext.",
   "cadence": "weekly",
   "distribution": ["linkedin"],
-  "news_sources": ["pending_user_input"],
+  "news_sources": [
+    {
+      "name": "The Best One Yet (TBOY)",
+      "type": "youtube_channel",
+      "channel_url": "https://www.youtube.com/channel/UCly3md3CbnTFJP83lVUEcjw/videos",
+      "role": "candidate_stories + format_dna",
+      "fetcher": "scripts/subtext_fetch.py"
+    }
+  ],
   "format_primary": "linkedin_longform",
   "publish_gate": "manual_approval_required",
-  "notes": "Wire news sources in Phase 2 (next session). See HANDOFF.md for setup."
+  "pipeline": {
+    "weekly_command": ".claude/commands/subtext-weekly.md",
+    "lens": ".claude/commands/viral-subtext.md",
+    "format_dna": "recon/format-dna.json",
+    "candidates_dir": "data/subtext/candidates/",
+    "issues_log": "data/subtext/issues.jsonl",
+    "issue_schema": "schemas/subtext-issue.schema.json"
+  },
+  "notes": "Phase 2 wired. TBOY serves double duty: episode titles+descriptions are candidate stories, and their narrative structure is the format-DNA. Transcripts are PO-token-walled, so no Whisper/OpenAI needed. Run /subtext-weekly to fetch -> lens -> review -> approve."
 }
