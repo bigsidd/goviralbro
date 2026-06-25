@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.goviralbro.subtext-fetch</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>__PIPELINE_DIR__/scripts/subtext-weekly-fetch.sh</string>
+    <string>__PIPELINE_DIR__</string>
+  </array>
+
+  <!-- Sunday 8:00 AM, local system time (Pacific). Weekday 0 = Sunday. -->
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Weekday</key>
+    <integer>0</integer>
+    <key>Hour</key>
+    <integer>8</integer>
+    <key>Minute</key>
+    <integer>0</integer>
+  </dict>
+
+  <!-- If the Mac is asleep at 8am Sunday, launchd runs the missed job on wake. -->
+  <key>RunAtLoad</key>
+  <false/>
+
+  <key>StandardOutPath</key>
+  <string>__PIPELINE_DIR__/logs/subtext-fetch.out.log</string>
+  <key>StandardErrorPath</key>
+  <string>__PIPELINE_DIR__/logs/subtext-fetch.err.log</string>
+</dict>
+</plist>
