@@ -1,0 +1,10 @@
+{
+  "publication": "Subtext",
+  "tagline": "Everyone reads the headline. We read the subtext.",
+  "cadence": "weekly",
+  "distribution": ["linkedin"],
+  "news_sources": ["pending_user_input"],
+  "format_primary": "linkedin_longform",
+  "publish_gate": "manual_approval_required",
+  "notes": "Wire news sources in Phase 2 (next session). See HANDOFF.md for setup."
+}
