@@ -66,6 +66,8 @@ Everything needed to build, run, and scale social media channels and side hustle
 | Video editing or reel compilation | `video-editing` (ECC) |
 | Quick deck, doc, or one-pager for a side hustle | `anthropic-skills:pptx` or `frontend-slides` |
 
+Any deck generated from either route above (or the sponsorship-proposal deck below) applies `~/.claude/voice/decks.md` for structure/tone.
+
 ### Research & Discovery
 | Task | Route |
 |---|---|
