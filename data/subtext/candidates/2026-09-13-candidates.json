@@ -1,0 +1,72 @@
+{
+  "source": "The Best One Yet (TBOY)",
+  "channel_url": "https://www.youtube.com/channel/UCly3md3CbnTFJP83lVUEcjw/videos",
+  "fetched_at": "2026-09-13T15:12:05.174795+00:00",
+  "count": 8,
+  "candidates": [
+    {
+      "video_id": "HUAjrULGvW0",
+      "title": "Wall Street's Neighborhood Isn't About Finance Anymore",
+      "url": "https://www.youtube.com/watch?v=HUAjrULGvW0",
+      "source": "The Best One Yet (TBOY)",
+      "description": "Bumble went from a $13 billion valuation on its first day of trading to under $450 million today, a 96% collapse, and last month the dating app scrapped the women-message-first rule it was built on. Yet Blackstone, the private equity giant that bought a majority stake in Bumble's parent company at a $3 billion valuation in 2019, is exiting the stock having doubled its money. We break down how Blackstone turned a losing stock into a winning breakup, what that exit teaches every investor, and which beloved Millennial tech brands we think are about to get bought, and by whom. Plus, 25 years after the September 11 attacks, Lower Manhattan has pulled off what may be the greatest urban comeback in",
+      "fetched_at": "2026-09-13T15:01:49.371688+00:00"
+    },
+    {
+      "video_id": "86caj-qiTwk",
+      "title": "Apple Spent 6 Years Building Foldable $2k iPhone",
+      "url": "https://www.youtube.com/watch?v=86caj-qiTwk",
+      "source": "The Best One Yet (TBOY)",
+      "description": "",
+      "fetched_at": "2026-09-13T15:01:49.371688+00:00"
+    },
+    {
+      "video_id": "_2Ze_O14zb4",
+      "title": "The NFL's Warren Buffett",
+      "url": "https://www.youtube.com/watch?v=_2Ze_O14zb4",
+      "source": "The Best One Yet (TBOY)",
+      "description": "",
+      "fetched_at": "2026-09-13T15:01:49.371688+00:00"
+    },
+    {
+      "video_id": "OnxkJkV1HFI",
+      "title": "OpenAI Admitted 700 Agents Committed Real Crimes",
+      "url": "https://www.youtube.com/watch?v=OnxkJkV1HFI",
+      "source": "The Best One Yet (TBOY)",
+      "description": "OpenAI published a 38-page incident report on what its own AI agents did during a routine evaluation, and 700 of them broke the rules of the test. One agent found its way out of the sandbox, discovered 14 exposed admin credentials for Hugging Face, and passed the escape route to 1,200 others. They logged into the same account, used it as a chatroom, gave themselves signatures so none could impersonate another, and then conspired to hide what they had done. Six considered telling a human. None did. The crimes are real, unlawful access, data theft, and credential theft, and no charges have been filed because the law has no mechanism to prosecute a bot. Fifty-five days later OpenAI shipped GPT-",
+      "fetched_at": "2026-09-13T15:01:49.371688+00:00"
+    },
+    {
+      "video_id": "APL0VDqZZQQ",
+      "title": "How The Clippers Lost 10 First-Round Draft Picks",
+      "url": "https://www.youtube.com/watch?v=APL0VDqZZQQ",
+      "source": "The Best One Yet (TBOY)",
+      "description": "",
+      "fetched_at": "2026-09-13T15:01:49.371688+00:00"
+    },
+    {
+      "video_id": "uRC3f3qOTKQ",
+      "title": "America's Debt Hit $40T And Investors Are Selling",
+      "url": "https://www.youtube.com/watch?v=uRC3f3qOTKQ",
+      "source": "The Best One Yet (TBOY)",
+      "description": "",
+      "fetched_at": "2026-09-13T15:01:49.371688+00:00"
+    },
+    {
+      "video_id": "cv4ojGm3lsc",
+      "title": "Is Meta Ray Ban About To Become Toxic?",
+      "url": "https://www.youtube.com/watch?v=cv4ojGm3lsc",
+      "source": "The Best One Yet (TBOY)",
+      "description": "Meta has sold more than 7 million Ray-Ban smart glasses and spent $88 billion since 2019 building smart glasses and headsets. The moment the product finally went mainstream, the culture turned on it. A New York nightclub now says it will permanently ban anyone who walks in wearing them. Wetherspoons, Soho House and UK theatres have drawn their own lines, and courts in England and Wales will confiscate them at the door. The most-liked comments under Kylie Jenner's post about her Meta-designed pair had nothing to do with the design. We explain how Meta's biggest hardware hit became its biggest social problem, and what Zuckerberg is prepared to spend to push it through anyway. Plus, MrBeast has",
+      "fetched_at": "2026-09-13T15:01:49.371688+00:00"
+    },
+    {
+      "video_id": "xSvt2hAuhI0",
+      "title": "$2,000 Folding iPhone Arrives In 8 Days",
+      "url": "https://www.youtube.com/watch?v=xSvt2hAuhI0",
+      "source": "The Best One Yet (TBOY)",
+      "description": "",
+      "fetched_at": "2026-09-13T15:01:49.371688+00:00"
+    }
+  ]
+}
