@@ -73,7 +73,7 @@ Any deck generated from either route above (or the sponsorship-proposal deck bel
 |---|---|
 | Finding viral content to model | `viral-discover` |
 | Competitor and market research | `market-research` → `deep-research` |
-| Audience and account research | `common-room:account-research` |
+| Audience and account research | Exa MCP web search (`mcp__exa__*`) |
 | X/Twitter API integrations | `x-api` (ECC) |
 
 ### Automation & Growth
