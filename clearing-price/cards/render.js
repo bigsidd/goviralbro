@@ -5,5 +5,5 @@ const b=await chromium.launch();
 for(const [size,w,h] of [['tall',1080,1350],['wide',1200,627]]){
  const pg=await b.newPage({viewport:{width:w,height:h}});
  await pg.goto('file://'+path.resolve(__dirname,'card.html')+'?size='+size+'&d='+encodeURIComponent(d));
- await pg.screenshot({path:`${out}-${size}.png`});}
+ await pg.evaluate(()=>document.fonts.ready);await pg.waitForTimeout(50);await pg.screenshot({path:`${out}-${size}.png`});}
 await b.close();})();
